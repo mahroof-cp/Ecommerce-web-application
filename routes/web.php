@@ -38,8 +38,7 @@
 
     // STORAGE LINKED ROUTE
     Route::get('storage-link',[AdminController::class,'storageLink'])->name('storage.link');
-
-
+    
     Auth::routes(['register' => false]);
 
     Route::get('user/login', [FrontendController::class, 'login'])->name('login.form');
